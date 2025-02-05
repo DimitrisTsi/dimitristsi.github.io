@@ -1,112 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135123644-1"></script>
+  <meta charset="UTF-8">
+  <!-- Ensures proper rendering and touch zooming on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+
+  <!-- Google Analytics (Replace UA-XXXXXXXXX-X with your own ID if desired) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    gtag('config', 'UA-135123644-1');
+    gtag('config', 'UA-XXXXXXXXX-X');
   </script>
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title>
-    ...
-  </title>
-
-  <!-- CSS -->
-  <-- <link rel="stylesheet" href="css/poole.css"> -->
-  <-- <link rel="stylesheet" href="css/syntax.css"> -->
-  <-- <link rel="stylesheet" href="css/lanyon.css"> -->
-  <-- <link rel="stylesheet" href="css/css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+  <!-- Academicons (optional) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
-
 <body class="layout-reverse">
-  <!-- Sidebar -->
+  <!-- Sidebar with personal info and navigation -->
   <div class="sidebar" id="sidebar">
-    <div class="sidebar-item">
-      <p></p>
-      <center>
-        <!-- <div><img src="img/logo.png" width="90%" height="90%"></div> -->
-      </center>
-      <p></p>
-      <p></p>
-      <center>
-        <a href="https://github.com/dimitristsi" title="GitHub" target="_blank">
-          <i class="fab fa-github" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a> &nbsp;
-        <a href="https://www.researchgate.net/profile/Dimitris-Tsirantonakis" title="ResearchGate" target="_blank">
-          <i class="fab fa-researchgate" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a> &nbsp;
-        <a href="mailto:dtsirantonakis@iacm.forth.gr" title="Email" target="_blank">
-          <i class="fas fa-envelope" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a> &nbsp;
-        <a href="https://www.linkedin.com/in/dtsirantonakis/" title="Linkedin" target="_blank">
-          <i class="fab fa-linkedin" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a> &nbsp;
-        <a href="https://twitter.com/DTsirantonakis" title="Twitter" target="_blank">
-          <i class="fab fa-twitter" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a> &nbsp;
-        <a href="https://scholar.google.com/citations?user=RgjimzYAAAAJ&hl=en" title="Google Scholar" target="_blank">
-          <i class="ai ai-google-scholar-square ai-3x" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a> &nbsp;
-        <a href="https://orcid.org/0000-0002-2628-326X" title="ORCID" target="_blank">
-          <i class="ai ai-orcid ai-3x" style="font-size: 1.7em" aria-hidden="true"></i>
-        </a>
-      </center>
-      <p></p>
+    <div class="sidebar-header">
+      <h2>Your Name</h2>
+      <p>Web Developer &amp; Designer</p>
     </div>
-
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" style="text-align: right" href="http://dimitristsi.github.io/">Home</a>
-      <!-- <a class="sidebar-nav-item" style="text-align: right" href="Education.html">Education & Work</a> -->
-      <!-- <a class="sidebar-nav-item" style="text-align: right" href="Publications.html">Publications</a> -->
-      <!-- <a class="sidebar-nav-item" style="text-align: right" href="Presentations.html">Presentations</a> -->
-      <!-- <a class="sidebar-nav-item" style="text-align: right" href="Projects.html">Research Projects</a> -->
-      <!-- <a class="sidebar-nav-item" style="text-align: right" href="Teaching.html">Teaching</a> -->
-      <!-- <a class="sidebar-nav-item" style="text-align: right" href="Achievements.html">Awards & Activities</a> -->
+      <a class="sidebar-nav-item" href="#about">About</a>
+      <a class="sidebar-nav-item" href="#projects">Projects</a>
+      <a class="sidebar-nav-item" href="#contact">Contact</a>
     </nav>
-
-    <div class="sidebar-item"></div>
+    <div class="sidebar-social">
+      <a href="https://github.com/yourusername" title="GitHub" target="_blank">
+        <i class="fab fa-github" style="font-size: 1.7em"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yourusername/" title="LinkedIn" target="_blank">
+        <i class="fab fa-linkedin" style="font-size: 1.7em"></i>
+      </a>
+      <a href="mailto:youremail@example.com" title="Email" target="_blank">
+        <i class="fas fa-envelope" style="font-size: 1.7em"></i>
+      </a>
+      <!-- Add additional social links as desired -->
+    </div>
   </div>
 
+  <!-- Main content area -->
   <div class="wrap">
-    <div class="masthead">
+    <!-- Masthead Section -->
+    <header class="masthead" id="home">
       <div class="container">
-        <h3 class="masthead-title">
-          <a href="http://dimitristsi.github.io/" title="Home">Dimitris Tsirantonakis</a>
-          <br>
-          <small></small>
-        </h3>
+        <h1>Welcome to My Portfolio</h1>
+        <p>A showcase of my work and projects.</p>
       </div>
-    </div>
+    </header>
 
-    <div class="container content">
-      <div class="post">
-        <article class="post-content">
-          <center>
-            <!-- <img src="img/Photo.jpg" alt="Brad" align="right" style="width: 42%; height: 42%; margin:8px"> -->
-          </center>
-          <p>
-            ...
-          </p>
-          <p>
-            ...
-          </p>
-        </article>
+    <!-- About Section -->
+    <section id="about" class="container content">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m [Your Name], a passionate web developer and designer based in [Your Location].
+        I specialize in building user-friendly websites and applications that make a difference.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container content">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project Title 1</h3>
+        <p>A brief description of your project goes here. Explain the key features, technologies used, and any results or outcomes.</p>
+        <a href="project1.html">Learn More</a>
       </div>
-    </div>
+      <div class="project">
+        <h3>Project Title 2</h3>
+        <p>A brief description of another project. Include images or links as needed to highlight your work.</p>
+        <a href="project2.html">Learn More</a>
+      </div>
+      <!-- Add more project blocks as necessary -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content">
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, drop me a message at <a href="mailto:youremail@example.com">youremail@example.com</a> or connect with me on social media.</p>
+      <!-- You could also include a contact form here -->
+    </section>
   </div>
 
-  <!-- <script src="js/Sideresponse.js"></script> -->
-  <!-- <script src="js/Sidecheck.js"></script> -->
-</body>
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 
+  <!-- Optional JavaScript (e.g., for interactive sidebar behavior) -->
+  <!-- <script src="js/script.js"></script> -->
+</body>
 </html>
