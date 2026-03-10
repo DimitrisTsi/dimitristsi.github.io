@@ -1,0 +1,33 @@
+name: Update publications
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"   # once per week
+  workflow_dispatch:      # allow manual run
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install packages
+        run: pip install scholarly
+
+      - name: Fetch publications
+        run: python scholar_fetch.py
+
+      - name: Commit updates
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add publications.json
+          git commit -m "Update publications" || echo "No changes"
+          git push
