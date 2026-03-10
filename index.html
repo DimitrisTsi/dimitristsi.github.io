@@ -1,197 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dimitris Tsirantonakis – Climate & Geospatial Applications</title>
+
+<title>Dimitris Tsirantonakis | Climate & Geospatial Scientist</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root {
-  --bg: #0f172a;
-  --card: #1e293b;
-  --accent: #38bdf8;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
+
+:root{
+--bg:#0f172a;
+--card:#1e293b;
+--accent:#38bdf8;
+--text:#e2e8f0;
+--muted:#94a3b8;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+body{
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
 }
 
-header {
-  padding: 80px 0 60px 0;
-  text-align: center;
+header{
+padding:100px 0;
+text-align:center;
 }
 
-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+header h1{
+font-size:3rem;
+margin-bottom:20px;
 }
 
-header p {
-  font-size: 1.1rem;
-  color: var(--muted);
-  max-width: 650px;
-  margin: auto;
+header p{
+max-width:700px;
+margin:auto;
+color:var(--muted);
 }
 
-section {
-  padding: 60px 0;
+.hero-buttons{
+margin-top:30px;
 }
 
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 40px;
-  border-bottom: 2px solid var(--accent);
-  display: inline-block;
-  padding-bottom: 6px;
+.hero-buttons a{
+background:var(--accent);
+color:black;
+padding:10px 20px;
+border-radius:8px;
+margin:5px;
+text-decoration:none;
+font-weight:600;
 }
 
-.projects {
-  display: grid;
-  gap: 30px;
+section{
+padding:60px 0;
 }
 
-.project-card {
-  background: var(--card);
-  padding: 30px;
-  border-radius: 12px;
-  transition: 0.3s ease;
+h2{
+font-size:1.8rem;
+margin-bottom:40px;
+border-bottom:2px solid var(--accent);
+display:inline-block;
+padding-bottom:6px;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.grid{
+display:grid;
+gap:30px;
 }
 
-.project-card h3 {
-  margin-bottom: 15px;
+.card{
+background:var(--card);
+padding:30px;
+border-radius:12px;
+transition:0.3s ease;
 }
 
-.project-card p {
-  color: var(--muted);
-  margin-bottom: 20px;
+.card:hover{
+transform:translateY(-5px);
 }
 
-.project-card a {
-  text-decoration: none;
-  color: var(--accent);
-  font-weight: 600;
+.card h3{
+margin-bottom:10px;
 }
 
-footer {
-  padding: 40px 0;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.9rem;
+.card p{
+color:var(--muted);
 }
 
-.links a {
-  color: var(--muted);
-  margin: 0 10px;
-  text-decoration: none;
+@media(min-width:768px){
+.grid{
+grid-template-columns:1fr 1fr;
+}
 }
 
-.links a:hover {
-  color: var(--accent);
+footer{
+text-align:center;
+padding:40px 0;
+color:var(--muted);
 }
 
-@media (min-width: 768px) {
-  .projects {
-    grid-template-columns: 1fr 1fr;
-  }
+.links a{
+margin:0 10px;
+color:var(--muted);
+text-decoration:none;
 }
+
+.links a:hover{
+color:var(--accent);
+}
+
 </style>
 </head>
+
 
 <body>
 
 <header class="container">
-  <h1>Interactive Climate & Geospatial Applications</h1>
-  <p>
-    I build data-driven tools for urban climate research, Earth observation,
-    and environmental intelligence. Focused on translating complex atmospheric
-    and geospatial datasets into interactive web applications.
-  </p>
+
+<h1>Dimitris Tsirantonakis</h1>
+
+<p>
+Climate scientist working at the intersection of urban climate modeling,
+Earth observation and geospatial analytics.
+Building tools and datasets to understand and monitor urban environments.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://github.com/dimitristsi" target="_blank">GitHub</a>
+<a href="https://orcid.org/0000-0002-2628-326X" target="_blank">ORCID</a>
+<a href="https://www.linkedin.com/in/dimitristsirantonakis/" target="_blank">LinkedIn</a>
+
+</div>
+
 </header>
 
+
 <section class="container">
+
+<h2>Research Areas</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Urban Climate</h3>
+<p>Energy balance modelling, urban heat island analysis and climate services for cities.</p>
+</div>
+
+<div class="card">
+<h3>Earth Observation</h3>
+<p>Satellite and in-situ observations for monitoring vegetation, surface processes and climate indicators.</p>
+</div>
+
+<div class="card">
+<h3>Geospatial Data Science</h3>
+<p>Large scale environmental data processing using Python and cloud geospatial tools.</p>
+</div>
+
+<div class="card">
+<h3>Interactive Scientific Tools</h3>
+<p>Building web applications to explore climate datasets and communicate scientific insights.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="container">
+
 <h2>Applications</h2>
 
-<div class="projects">
+<div class="grid">
 
-<div class="project-card">
+<div class="card">
 <h3>Forecast Model Visualization</h3>
-<p>
-Interactive visualization of forecast model outputs.
-Explore spatial patterns and temporal evolution of meteorological variables
-through a responsive web interface.
-</p>
-<a href="https://dimitristsi.github.io/forecast-model-vis/" target="_blank">
-Launch Application →
-</a>
+<p>Interactive visualization of meteorological forecast model outputs.</p>
+<a href="https://dimitristsi.github.io/forecast-model-vis/" target="_blank">Launch →</a>
 </div>
 
-<div class="project-card">
+<div class="card">
 <h3>Earthquake 3D Map</h3>
-<p>
-Real-time 3D visualization of global seismic activity.
-Analyze magnitude, depth, and clustering through an immersive globe interface.
-</p>
-<a href="https://dimitristsi.github.io/earthquake-3d-map/" target="_blank">
-Launch Application →
-</a>
+<p>Real-time visualization of global seismic activity in a 3D globe.</p>
+<a href="https://dimitristsi.github.io/earthquake-3d-map/" target="_blank">Launch →</a>
 </div>
 
 </div>
+
 </section>
 
 
 <section class="container">
+
 <h2>Publications</h2>
 
-<div id="pub-list" class="projects"></div>
+<div id="pub-list" class="grid"></div>
 
 </section>
 
 
 <section class="container">
-<h2>About</h2>
-<p style="max-width: 800px;">
-Dimitris Tsirantonakis is a researcher working at the intersection of
-urban climate science, remote sensing, and geospatial analytics.
-His work integrates Earth Observation data, land surface modeling,
-and interactive visualization technologies to support climate intelligence
-and environmental monitoring.
+
+<h2>Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>PhD Researcher</h3>
+<p>
+Environmental Meteorology – University of Freiburg  
+Urban vegetation dynamics and climate modelling.
 </p>
+</div>
+
+<div class="card">
+<h3>Remote Sensing Lab – FORTH</h3>
+<p>
+Earth Observation research focusing on urban climate monitoring and geospatial analytics.
+</p>
+</div>
+
+</div>
+
 </section>
 
 
 <section class="container">
+
 <h2>Contact</h2>
+
 <div class="links">
-<a href="https://github.com/dimitristsi" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/dimitristsirantonakis/" target="_blank">LinkedIn</a>
+
 <a href="mailto:your.email@example.com">Email</a>
+<a href="https://github.com/dimitristsi">GitHub</a>
+<a href="https://www.linkedin.com/in/dimitristsirantonakis/">LinkedIn</a>
+<a href="https://orcid.org/0000-0002-2628-326X">ORCID</a>
+
 </div>
+
 </section>
+
 
 <footer>
 © 2026 Dimitris Tsirantonakis
@@ -200,22 +265,25 @@ and environmental monitoring.
 
 <script>
 
+document.addEventListener("DOMContentLoaded", function(){
+
 fetch("publications.json")
-.then(response => response.json())
-.then(data => {
+.then(res=>res.json())
+.then(data=>{
 
-const container = document.getElementById("pub-list")
+const container=document.getElementById("pub-list")
 
-data
-.sort((a,b)=>b.year-a.year)
-.forEach(pub => {
+data.sort((a,b)=>b.year-a.year)
 
-const card = document.createElement("div")
-card.className = "project-card"
+data.forEach(pub=>{
 
-card.innerHTML = `
+const card=document.createElement("div")
+
+card.className="card"
+
+card.innerHTML=`
 <h3>${pub.title}</h3>
-<p>${pub.journal || ""} (${pub.year || ""})</p>
+<p>${pub.journal||""} (${pub.year||""})</p>
 <a href="${pub.url}" target="_blank">View Publication →</a>
 `
 
@@ -224,8 +292,7 @@ container.appendChild(card)
 })
 
 })
-.catch(err => {
-console.log("Publications could not load:", err)
+
 })
 
 </script>
