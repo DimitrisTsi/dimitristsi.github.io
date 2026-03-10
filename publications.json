@@ -1,8 +1,50 @@
 [
   {
-    "title": "Urban Vegetation Phenology from PhenoCams",
-    "journal": "Remote Sensing of Environment",
-    "year": 2025,
-    "url": "https://doi.org/xxxxx"
+    "title": "Analysis of urban surface temperatures from ground-based and airborne sensors: Berlin, Germany",
+    "year": "2025",
+    "journal": "",
+    "url": "https://doi.org/10.5194/icuc12-450"
+  },
+  {
+    "title": "Evaluation of SUEWS sensitivity to vegetation parameters in a residential area in Berlin, Germany",
+    "year": "2025",
+    "journal": "",
+    "url": "https://doi.org/10.5194/icuc12-404"
+  },
+  {
+    "title": "Urban trees phenology and local climate feedbacks of a residential area in Berlin.",
+    "year": "2025",
+    "journal": "",
+    "url": "https://doi.org/10.5194/egusphere-egu24-15395"
+  },
+  {
+    "title": "PhenoCam Dataset v3.0: Vegetation Phenology from Digital Camera Imagery, 2000-2023",
+    "year": "2025",
+    "journal": "",
+    "url": "https://doi.org/10.3334/ORNLDAAC/2389"
+  },
+  {
+    "title": "urbisphere-Berlin campaign: Investigating multi-scale urban impacts on the atmospheric boundary layer",
+    "year": "2024",
+    "journal": "",
+    "url": "https://doi.org/10.1175/bams-d-23-0030.1"
+  },
+  {
+    "title": "A web-based tool for supporting USM in Heraklion",
+    "year": "2023",
+    "journal": "",
+    "url": "https://doi.org/10.1109/jurse57346.2023.10144144"
+  },
+  {
+    "title": "Initial development of the urbisphere urban hyperspectral library: Berlin, Germany",
+    "year": "2023",
+    "journal": "",
+    "url": "https://doi.org/10.1109/jurse57346.2023.10144154"
+  },
+  {
+    "title": "Earth Observation Data Exploitation in Urban Surface Modelling: The Urban Energy Balance Response to a Suburban Park Development",
+    "year": "2022",
+    "journal": "",
+    "url": "https://doi.org/10.3390/rs14061473"
   }
 ]
