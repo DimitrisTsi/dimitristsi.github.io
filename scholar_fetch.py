@@ -1,20 +1,38 @@
-from scholarly import scholarly
+import requests
 import json
 
-AUTHOR_ID = "RgjimzYAAAAJ"
+ORCID_ID = "0000-0002-2628-326X"
 
-author = scholarly.search_author_id(AUTHOR_ID)
-author = scholarly.fill(author)
+url = f"https://pub.orcid.org/v3.0/{ORCID_ID}/works"
+
+headers = {
+    "Accept": "application/json"
+}
+
+r = requests.get(url, headers=headers)
+data = r.json()
 
 pubs = []
 
-for p in author["publications"]:
-    p = scholarly.fill(p)
+for group in data["group"]:
+    work = group["work-summary"][0]
+
+    title = work["title"]["title"]["value"]
+
+    year = None
+    if work["publication-date"] and work["publication-date"]["year"]:
+        year = work["publication-date"]["year"]["value"]
+
+    doi = None
+    for ext in work.get("external-ids", {}).get("external-id", []):
+        if ext["external-id-type"] == "doi":
+            doi = ext["external-id-value"]
+
     pubs.append({
-        "title": p["bib"]["title"],
-        "year": p["bib"].get("pub_year"),
-        "journal": p["bib"].get("venue"),
-        "url": p.get("pub_url")
+        "title": title,
+        "year": year,
+        "journal": "",
+        "url": f"https://doi.org/{doi}" if doi else "#"
     })
 
 with open("publications.json", "w") as f:
