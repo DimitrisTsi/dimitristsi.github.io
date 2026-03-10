@@ -133,59 +133,102 @@ footer {
 </header>
 
 <section class="container">
-  <h2>Applications</h2>
+<h2>Applications</h2>
 
-  <div class="projects">
+<div class="projects">
 
-    <div class="project-card">
-      <h3>Forecast Model Visualization</h3>
-      <p>
-        Interactive visualization of forecast model outputs.
-        Explore spatial patterns and temporal evolution of meteorological variables
-        through a responsive web interface.
-      </p>
-      <a href="https://dimitristsi.github.io/forecast-model-vis/" target="_blank">
-        Launch Application →
-      </a>
-    </div>
+<div class="project-card">
+<h3>Forecast Model Visualization</h3>
+<p>
+Interactive visualization of forecast model outputs.
+Explore spatial patterns and temporal evolution of meteorological variables
+through a responsive web interface.
+</p>
+<a href="https://dimitristsi.github.io/forecast-model-vis/" target="_blank">
+Launch Application →
+</a>
+</div>
 
-    <div class="project-card">
-      <h3>Earthquake 3D Map</h3>
-      <p>
-        Real-time 3D visualization of global seismic activity.
-        Analyze magnitude, depth, and clustering through an immersive globe interface.
-      </p>
-      <a href="https://dimitristsi.github.io/earthquake-3d-map/" target="_blank">
-        Launch Application →
-      </a>
-    </div>
+<div class="project-card">
+<h3>Earthquake 3D Map</h3>
+<p>
+Real-time 3D visualization of global seismic activity.
+Analyze magnitude, depth, and clustering through an immersive globe interface.
+</p>
+<a href="https://dimitristsi.github.io/earthquake-3d-map/" target="_blank">
+Launch Application →
+</a>
+</div>
 
-  </div>
+</div>
 </section>
 
-<section class="container">
-  <h2>About</h2>
-  <p style="max-width: 800px;">
-    Dimitris Tsirantonakis is a researcher working at the intersection of
-    urban climate science, remote sensing, and geospatial analytics.
-    His work integrates Earth Observation data, land surface modeling,
-    and interactive visualization technologies to support climate intelligence
-    and environmental monitoring.
-  </p>
-</section>
 
 <section class="container">
-  <h2>Contact</h2>
-  <div class="links">
-    <a href="https://github.com/dimitristsi" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/dimitristsirantonakis/" target="_blank">LinkedIn</a>
-    <a href="mailto:your.email@example.com">Email</a>
-  </div>
+<h2>Publications</h2>
+
+<div id="pub-list" class="projects"></div>
+
+</section>
+
+
+<section class="container">
+<h2>About</h2>
+<p style="max-width: 800px;">
+Dimitris Tsirantonakis is a researcher working at the intersection of
+urban climate science, remote sensing, and geospatial analytics.
+His work integrates Earth Observation data, land surface modeling,
+and interactive visualization technologies to support climate intelligence
+and environmental monitoring.
+</p>
+</section>
+
+
+<section class="container">
+<h2>Contact</h2>
+<div class="links">
+<a href="https://github.com/dimitristsi" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/dimitristsirantonakis/" target="_blank">LinkedIn</a>
+<a href="mailto:your.email@example.com">Email</a>
+</div>
 </section>
 
 <footer>
-  © 2026 Dimitris Tsirantonakis
+© 2026 Dimitris Tsirantonakis
 </footer>
+
+
+<script>
+
+fetch("publications.json")
+.then(response => response.json())
+.then(data => {
+
+const container = document.getElementById("pub-list")
+
+data
+.sort((a,b)=>b.year-a.year)
+.forEach(pub => {
+
+const card = document.createElement("div")
+card.className = "project-card"
+
+card.innerHTML = `
+<h3>${pub.title}</h3>
+<p>${pub.journal || ""} (${pub.year || ""})</p>
+<a href="${pub.url}" target="_blank">View Publication →</a>
+`
+
+container.appendChild(card)
+
+})
+
+})
+.catch(err => {
+console.log("Publications could not load:", err)
+})
+
+</script>
 
 </body>
 </html>
